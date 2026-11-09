@@ -1,0 +1,13 @@
+[package]
+name = "ohos_sqlcipher_probe"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+# Not used by matrix-rust-sdk. Element X uses this only via the Android AAR
+# net.zetetic:sqlcipher-android for its own SQLDelight session DB.
+rusqlite = { version = "0.40.2", default-features = false, features = ["bundled-sqlcipher"] }

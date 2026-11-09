@@ -1,0 +1,108 @@
+HOST x86_64-unknown-linux-gnu, rustc 1.99.1 (58cf8f9c3 2026-10-13).
+Source commit: matrix-rust-sdk 3ff03638028fd9abf58203153722b94b4293a87a
+This is NOT an OpenHarmony run, NOT a HarmonyOS device run, and NOT device E2EE.
+Only the matrix-sdk-store-encryption library unit tests were executed.
+
+    Updating git repository `https://github.com/element-hq/async-compat`
+    Updating git repository `https://github.com/jplatte/const_panic`
+    Updating git repository `https://github.com/shssoichiro/zxcvbn-rs`
+    Updating crates.io index
+    Updating git repository `https://github.com/ruma/ruma`
+ Downloading crates ...
+  Downloaded inout v0.2.2
+  Downloaded thiserror v2.0.20
+  Downloaded hybrid-array v0.4.13
+  Downloaded itoa v1.0.18
+  Downloaded autocfg v1.5.1
+  Downloaded sha2 v0.11.0
+  Downloaded cfg-if v1.0.4
+  Downloaded cpufeatures v0.3.0
+  Downloaded num-traits v0.2.19
+  Downloaded find-msvc-tools v0.1.12
+  Downloaded pbkdf2 v0.13.0
+  Downloaded thiserror-impl v2.0.20
+  Downloaded ctutils v0.4.5
+  Downloaded rmp v0.8.15
+  Downloaded constant_time_eq v0.4.2
+  Downloaded zeroize v1.9.0
+  Downloaded digest v0.11.2
+  Downloaded unicode-ident v1.0.24
+  Downloaded rmp-serde v1.3.1
+  Downloaded rand v0.10.2
+  Downloaded cc v1.4.5
+  Downloaded serde_json v1.0.151
+  Downloaded blake3 v1.8.7
+  Downloaded syn v3.0.5
+  Downloaded libc v0.2.189
+   Compiling typenum v1.20.1
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.47
+   Compiling cmov v0.5.4
+   Compiling ctutils v0.4.5
+   Compiling cfg-if v1.0.4
+   Compiling serde_core v1.0.229
+   Compiling cpufeatures v0.3.0
+   Compiling autocfg v1.5.1
+   Compiling const-oid v0.10.2
+   Compiling num-traits v0.2.19
+   Compiling hybrid-array v0.4.13
+   Compiling libc v0.2.189
+   Compiling syn v3.0.5
+   Compiling crypto-common v0.2.2
+   Compiling block-buffer v0.12.1
+   Compiling inout v0.2.2
+   Compiling rand_core v0.10.1
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.12
+   Compiling digest v0.11.2
+   Compiling cc v1.4.5
+   Compiling cipher v0.5.2
+   Compiling zmij v1.0.23
+   Compiling getrandom v0.4.3
+   Compiling serde v1.0.229
+   Compiling serde_derive v1.0.229
+   Compiling chacha20 v0.10.2
+   Compiling blake3 v1.8.7
+   Compiling universal-hash v0.6.1
+   Compiling syn v2.0.119
+   Compiling thiserror v2.0.20
+   Compiling anyhow v1.0.104
+   Compiling serde_json v1.0.151
+   Compiling poly1305 v0.9.1
+   Compiling rmp v0.8.15
+   Compiling thiserror-impl v2.0.20
+   Compiling hmac v0.13.0
+   Compiling aead v0.6.1
+   Compiling constant_time_eq v0.4.2
+   Compiling memchr v2.8.3
+   Compiling arrayvec v0.7.8
+   Compiling itoa v1.0.18
+   Compiling chacha20poly1305 v0.11.0
+   Compiling rmp-serde v1.3.1
+   Compiling hkdf v0.13.0
+   Compiling rand v0.10.2
+   Compiling serde_bytes v0.11.19
+   Compiling pbkdf2 v0.13.0
+   Compiling sha2 v0.11.0
+   Compiling base64 v0.23.1
+   Compiling zeroize_derive v1.5.0
+   Compiling zeroize v1.9.0
+   Compiling matrix-sdk-store-encryption v0.19.1 (/tmp/matrix-rust-sdk/crates/matrix-sdk-store-encryption)
+    Finished `test` profile [unoptimized] target(s) in 8.25s
+     Running unittests src/lib.rs (target/debug/deps/matrix_sdk_store_encryption-521e2ae402d02247)
+
+running 10 tests
+test tests::can_round_trip_base64_to_normal_encrypted_values ... ok
+test tests::can_round_trip_normal_to_base64_encrypted_values ... ok
+test tests::decoding_invalid_base64_returns_an_error ... ok
+test tests::encrypting_keys ... ok
+test tests::generating ... ok
+test tests::import_with_key_no_kdf_variant ... ok
+test tests::encrypting_values ... ok
+test tests::encrypting_values_base64 ... ok
+test tests::test_importing_invalid_store_cipher_does_not_panic ... ok
+test tests::exporting_store_cipher ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+

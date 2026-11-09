@@ -1,0 +1,14 @@
+[package]
+name = "ohos_native_deps"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["staticlib", "rlib"]
+
+[dependencies]
+# Pinned to the versions in matrix-rust-sdk 3ff036380 (sdk-android 26.11.05).
+rusqlite = { version = "0.40.2", default-features = false, features = ["bundled", "limits"] }
+chacha20poly1305 = { version = "0.11.0", default-features = false, features = ["alloc"] }
+vodozemac = "0.11.2"

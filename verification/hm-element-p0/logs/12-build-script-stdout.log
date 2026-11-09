@@ -1,0 +1,1686 @@
+===== native-deps 02:20:30 =====
+NATIVE_DEPS_EXIT:0
+   Compiling matrix-pickle v0.2.3
+   Compiling ed25519-dalek v3.0.0
+   Compiling rand v0.10.3
+   Compiling cbc v0.2.1
+   Compiling arrayvec v0.7.8
+   Compiling serde_bytes v0.11.19
+   Compiling base64 v0.23.1
+   Compiling base64ct v1.8.3
+   Compiling fallible-streaming-iterator v0.1.9
+   Compiling smallvec v1.16.5
+   Compiling fallible-iterator v0.3.0
+   Compiling bitflags v2.13.2
+   Compiling vodozemac v0.11.2
+   Compiling rusqlite v0.40.2
+   Compiling ohos_native_deps v0.1.0 (/tmp/hm-element-p0/poc/native-deps)
+warning: use of deprecated associated function `chacha20poly1305::aead::hybrid_array::Array::<T, U>::from_slice`: use `TryFrom` instead
+  --> src/lib.rs:19:20
+   |
+19 |     let key = Key::from_slice(&[7u8; 32]);
+   |                    ^^^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: `ohos_native_deps` (lib) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 33.57s
+target/aarch64-unknown-linux-ohos/release/libohos_native_deps.a: current ar archive
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+  Class:                             ELF64
+  Type:                              REL (Relocatable file)
+  Machine:                           AArch64
+-- needed --
+-- exports --
+===== tls-aws-lc 02:21:03 =====
+TLS_EXIT:0
+    Updating crates.io index
+     Locking 34 packages to highest compatible versions
+ Downloading crates ...
+  Downloaded dunce v1.0.5
+  Downloaded untrusted v0.9.0
+  Downloaded fs_extra v1.3.0
+  Downloaded cmake v0.1.58
+  Downloaded getrandom v0.2.17
+  Downloaded once_cell v1.21.4
+  Downloaded jobserver v0.1.35
+  Downloaded rustls-pki-types v1.15.1
+  Downloaded rustls-webpki v0.103.16
+  Downloaded aws-lc-rs v1.19.0
+  Downloaded rustls v0.23.46
+  Downloaded ring v0.17.14
+  Downloaded aws-lc-sys v0.47.0
+   Compiling libc v0.2.191
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+   Compiling pkg-config v0.3.34
+   Compiling fs_extra v1.3.0
+   Compiling dunce v1.0.5
+   Compiling aws-lc-rs v1.19.0
+   Compiling zeroize v1.9.1
+   Compiling untrusted v0.9.0
+   Compiling rustls v0.23.46
+   Compiling rustls-pki-types v1.15.1
+   Compiling once_cell v1.21.4
+   Compiling subtle v2.6.1
+   Compiling jobserver v0.1.35
+   Compiling cc v1.11.1
+   Compiling cmake v0.1.58
+   Compiling aws-lc-sys v0.47.0
+   Compiling rustls-webpki v0.103.16
+   Compiling ohos_tls_aws_lc v0.1.0 (/tmp/hm-element-p0/poc/tls-aws-lc)
+    Finished `release` profile [optimized] target(s) in 21.46s
+===== sqlcipher probe 02:21:25 =====
+SQLCIPHER_EXIT:101
+  cargo:rerun-if-env-changed=CPATH
+  cargo:rerun-if-env-changed=C_INCLUDE_PATH
+  cargo:rerun-if-env-changed=CPLUS_INCLUDE_PATH
+  cargo:rerun-if-env-changed=OBJC_INCLUDE_PATH
+  cargo:rerun-if-env-changed=OBJCPLUS_INCLUDE_PATH
+  cargo:rerun-if-env-changed=COMPILER_PATH
+  cargo:rerun-if-env-changed=SOURCE_DATE_EPOCH
+  cargo:rerun-if-env-changed=CCC_OVERRIDE_OPTIONS
+  cargo:rerun-if-env-changed=CLANG_NO_DEFAULT_CONFIG
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=TARGET_CFLAGS
+  TARGET_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_aarch64_unknown_linux_ohos
+  CFLAGS_aarch64_unknown_linux_ohos = None
+  cargo:rerun-if-env-changed=CFLAGS_aarch64-unknown-linux-ohos
+  CFLAGS_aarch64-unknown-linux-ohos = None
+  cargo:warning=sqlcipher/sqlite3.c:113738:10: fatal error: 'openssl/crypto.h' file not found
+  cargo:warning=#include <openssl/crypto.h> /* amalgamator: dontcache */
+  cargo:warning=         ^~~~~~~~~~~~~~~~~~
+  cargo:warning=1 error generated.
+
+  --- stderr
+
+
+  error occurred in cc-rs: command did not execute successfully (status code exit status: 1): "/tmp/hm-element-p0/toolchain/aarch64-unknown-linux-ohos-clang.sh" "-O3" "-ffunction-sections" "-fdata-sections" "-fPIC" "--target=aarch64-unknown-linux-ohos" "-w" "-DSQLITE_CORE" "-DSQLITE_DEFAULT_FOREIGN_KEYS=1" "-DSQLITE_ENABLE_API_ARMOR" "-DSQLITE_ENABLE_COLUMN_METADATA" "-DSQLITE_ENABLE_DBSTAT_VTAB" "-DSQLITE_ENABLE_FTS3" "-DSQLITE_ENABLE_FTS3_PARENTHESIS" "-DSQLITE_ENABLE_FTS5" "-DSQLITE_ENABLE_JSON1" "-DSQLITE_ENABLE_LOAD_EXTENSION=1" "-DSQLITE_ENABLE_MEMORY_MANAGEMENT" "-DSQLITE_ENABLE_RTREE" "-DSQLITE_ENABLE_STAT4" "-DSQLITE_SOUNDEX" "-DSQLITE_THREADSAFE=1" "-DSQLITE_USE_URI" "-DHAVE_USLEEP=1" "-DHAVE_ISNAN" "-D_POSIX_THREAD_SAFE_FUNCTIONS" "-DSQLITE_HAS_CODEC" "-DSQLITE_TEMP_STORE=2" "-DSQLITE_EXTRA_INIT=sqlcipher_extra_init" "-DSQLITE_EXTRA_SHUTDOWN=sqlcipher_extra_shutdown" "-DHAVE_STDINT_H=1" "-DHAVE_LOCALTIME_R" "-o" "/tmp/hm-element-p0/poc/sqlcipher-probe/target/aarch64-unknown-linux-ohos/release/build/libsqlite3-sys-1179d68d6edafd33/out/2f8b72fdb46c2132-sqlite3.o" "-c" "sqlcipher/sqlite3.c"
+
+
+===== napi rust staticlib 02:21:26 =====
+NAPI_RUST_EXIT:0
+   Compiling hm_poc_napi_rust v0.1.0 (/tmp/hm-element-p0/poc/napi/ruststat)
+    Finished `release` profile [optimized] target(s) in 0.06s
+===== napi c++ link 02:21:26 =====
+NAPI_CPP_EXIT:0
+/tmp/hm-element-p0/poc/napi/libhm_poc.so: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, with debug_info, not stripped
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+-- needed --
+  0x0000000000000001 (NEEDED)       Shared library: [libace_napi.z.so]
+  0x0000000000000001 (NEEDED)       Shared library: [libc++_shared.so]
+  0x0000000000000001 (NEEDED)       Shared library: [libc.so]
+-- exports --
+00000000000020c8 T _fini
+00000000000020b4 T _init
+0000000000002088 T hm_poc_add
+0000000000001dd4 T hm_poc_register_napi
+===== BUILD SCRIPT END 02:21:26 =====

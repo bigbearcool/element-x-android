@@ -1,0 +1,12 @@
+[package]
+name = "ohos_tls_aws_lc"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+# Same rustls pin as matrix-rust-sdk 3ff036380. Default SDK FFI feature is rustls-aws-lc-rs.
+rustls = { version = "0.23.46", default-features = false, features = ["std", "aws_lc_rs"] }

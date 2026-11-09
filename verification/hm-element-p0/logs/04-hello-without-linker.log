@@ -1,0 +1,15 @@
+DATE 2026-11-09T02:16:04Z
+PURPOSE negative control: rust-std for aarch64-unknown-linux-ohos is installed, linker is not
+rustc 1.99.1 (58cf8f9c3 2026-10-13)
+   Compiling hello_ohos v0.1.0 (/tmp/hm-element-p0/poc/hello-ohos)
+error: linking with `cc` failed: exit status: 1
+  |
+  = note:  "cc" "-Wl,--version-script=/tmp/hm-element-p0/poc/hello-ohos/target/aarch64-unknown-linux-ohos/release/deps/rustc5EDr8m/list" "-Wl,--no-undefined-version" "/tmp/hm-element-p0/poc/hello-ohos/target/aarch64-unknown-linux-ohos/release/deps/rustc5EDr8m/symbols.o" "<2 object files omitted>" "-Wl,--as-needed" "-Wl,-Bstatic" "<sysroot>/lib/rustlib/aarch64-unknown-linux-ohos/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,libcfg_if-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,liblibc-*,librustc_std_workspace_core-*,liballoc-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lunwind" "-lc" "-L" "/tmp/hm-element-p0/poc/hello-ohos/target/aarch64-unknown-linux-ohos/release/deps/rustc5EDr8m/raw-dylibs" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "<sysroot>/lib/rustlib/aarch64-unknown-linux-ohos/lib" "-o" "/tmp/hm-element-p0/poc/hello-ohos/target/aarch64-unknown-linux-ohos/release/deps/libhello_ohos.so" "-Wl,--gc-sections" "-shared" "-Wl,-z,relro,-z,now" "-Wl,-O1" "-Wl,--strip-debug" "-nodefaultlibs"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: /usr/bin/ld: /tmp/hm-element-p0/poc/hello-ohos/target/aarch64-unknown-linux-ohos/release/deps/hello_ohos.hello_ohos.37e16cb23b4674cf-cgu.0.rcgu.o: Relocations in generic ELF (EM: 183)
+          /usr/bin/ld: /tmp/hm-element-p0/poc/hello-ohos/target/aarch64-unknown-linux-ohos/release/deps/hello_ohos.hello_ohos.37e16cb23b4674cf-cgu.0.rcgu.o: error adding symbols: file in wrong format
+          cc: error: linker command failed with exit code 1 (use -v to see invocation)
+          
+
+error: could not compile `hello_ohos` (lib) due to 1 previous error
+EXIT:101

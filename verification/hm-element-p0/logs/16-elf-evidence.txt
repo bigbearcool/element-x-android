@@ -1,0 +1,28 @@
+hello so
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+0000000000015ed4 T hm_poc_ping
+napi so
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+ 0x0000000000000001 (NEEDED)             Shared library: [libace_napi.z.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc++_shared.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+0000000000002088 T hm_poc_add
+0000000000001dd4 T hm_poc_register_napi
+                 U napi_create_async_work
+                 U napi_create_error
+                 U napi_create_promise
+                 U napi_create_string_utf8
+                 U napi_create_uint32
+                 U napi_define_properties
+                 U napi_delete_async_work
+                 U napi_get_cb_info
+                 U napi_get_value_uint32
+                 U napi_module_register
+                 U napi_queue_async_work
+                 U napi_reject_deferred
+                 U napi_resolve_deferred

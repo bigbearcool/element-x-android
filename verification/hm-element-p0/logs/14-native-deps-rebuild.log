@@ -1,0 +1,11 @@
+   Compiling ohos_native_deps v0.1.0 (/tmp/hm-element-p0/poc/native-deps)
+warning: use of deprecated associated function `chacha20poly1305::aead::hybrid_array::Array::<T, U>::from_slice`: use `TryFrom` instead
+  --> src/lib.rs:22:20
+   |
+22 |     let key = Key::from_slice(&[7u8; 32]);
+   |                    ^^^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: `ohos_native_deps` (lib) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 0.35s

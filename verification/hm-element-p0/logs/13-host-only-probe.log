@@ -1,0 +1,18 @@
+DATE 2026-11-09T02:24:46Z
+HOST x86_64 execution of the probe. Not OpenHarmony, not a HarmonyOS device, not device E2EE.
+host: x86_64-unknown-linux-gnu
+   Compiling ohos_native_deps v0.1.0 (/tmp/hm-element-p0/poc/native-deps)
+warning: use of deprecated associated function `chacha20poly1305::aead::hybrid_array::Array::<T, U>::from_slice`: use `TryFrom` instead
+  --> src/lib.rs:22:20
+   |
+22 |     let key = Key::from_slice(&[7u8; 32]);
+   |                    ^^^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: `ohos_native_deps` (lib) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 0.37s
+     Running `target/release/host_only`
+HOST_ONLY sqlite=1 aead_len=6 vodozemac=1
+target_pointer_width=64
+HOST_RUN_EXIT:0

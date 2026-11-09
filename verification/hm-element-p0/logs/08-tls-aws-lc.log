@@ -1,0 +1,36 @@
+    Updating crates.io index
+     Locking 34 packages to highest compatible versions
+ Downloading crates ...
+  Downloaded dunce v1.0.5
+  Downloaded untrusted v0.9.0
+  Downloaded fs_extra v1.3.0
+  Downloaded cmake v0.1.58
+  Downloaded getrandom v0.2.17
+  Downloaded once_cell v1.21.4
+  Downloaded jobserver v0.1.35
+  Downloaded rustls-pki-types v1.15.1
+  Downloaded rustls-webpki v0.103.16
+  Downloaded aws-lc-rs v1.19.0
+  Downloaded rustls v0.23.46
+  Downloaded ring v0.17.14
+  Downloaded aws-lc-sys v0.47.0
+   Compiling libc v0.2.191
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.15
+   Compiling pkg-config v0.3.34
+   Compiling fs_extra v1.3.0
+   Compiling dunce v1.0.5
+   Compiling aws-lc-rs v1.19.0
+   Compiling zeroize v1.9.1
+   Compiling untrusted v0.9.0
+   Compiling rustls v0.23.46
+   Compiling rustls-pki-types v1.15.1
+   Compiling once_cell v1.21.4
+   Compiling subtle v2.6.1
+   Compiling jobserver v0.1.35
+   Compiling cc v1.11.1
+   Compiling cmake v0.1.58
+   Compiling aws-lc-sys v0.47.0
+   Compiling rustls-webpki v0.103.16
+   Compiling ohos_tls_aws_lc v0.1.0 (/tmp/hm-element-p0/poc/tls-aws-lc)
+    Finished `release` profile [optimized] target(s) in 21.46s

@@ -1,0 +1,5 @@
+DATE 2026-11-09T02:18:43Z
+EXPECTED 435e45941e15de6f4149140d69bcab298357c0302d7f24a896602021ccbbb982
+ACTUAL 435e45941e15de6f4149140d69bcab298357c0302d7f24a896602021ccbbb982
+URL https://repo.huaweicloud.com/openharmony/os/7.0-Beta1/ohos-sdk-windows_linux-public.tar.gz
+NOTE public OpenHarmony 7.0-Beta1 SDK, not DevEco / HarmonyOS NEXT commercial SDK

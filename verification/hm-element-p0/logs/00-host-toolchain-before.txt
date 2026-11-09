@@ -1,0 +1,18 @@
+DATE 2026-11-09T02:13:41Z
+UNAME Linux cursor 6.12.113+ #1 SMP PREEMPT_DYNAMIC Thu Nov  5 16:04:51 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+rustc 1.83.0 (90b35a623 2024-11-26)
+cargo 1.83.0 (5ffbef321 2024-10-29)
+rustup 1.29.2 (d8c92c676 2026-10-21)
+Default host: x86_64-unknown-linux-gnu
+rustup home:  /usr/local/rustup
+
+installed toolchains
+--------------------
+1.83.0-x86_64-unknown-linux-gnu (active, default)
+
+active toolchain
+----------------
+name: 1.83.0-x86_64-unknown-linux-gnu
+active because: it's the default toolchain
+installed targets:
+  x86_64-unknown-linux-gnu

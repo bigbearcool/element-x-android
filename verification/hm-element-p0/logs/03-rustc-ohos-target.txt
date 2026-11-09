@@ -1,0 +1,66 @@
+DATE 2026-11-09T02:14:28Z
+Default host: x86_64-unknown-linux-gnu
+rustup home:  /usr/local/rustup
+
+installed toolchains
+--------------------
+stable-x86_64-unknown-linux-gnu (active, default)
+1.83.0-x86_64-unknown-linux-gnu
+
+active toolchain
+----------------
+name: stable-x86_64-unknown-linux-gnu
+active because: it's the default toolchain
+installed targets:
+  aarch64-unknown-linux-ohos
+  x86_64-unknown-linux-gnu
+rustc 1.99.1 (58cf8f9c3 2026-10-13)
+binary: rustc
+commit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67
+commit-date: 2026-10-13
+host: x86_64-unknown-linux-gnu
+release: 1.99.1
+LLVM version: 23.1.1
+cargo 1.99.1 (5f94df478 2026-08-27)
+aarch64-unknown-linux-ohos
+armv7-unknown-linux-ohos
+loongarch64-unknown-linux-ohos
+x86_64-unknown-linux-ohos
+debug_assertions
+panic="unwind"
+target_abi=""
+target_arch="aarch64"
+target_endian="little"
+target_env="ohos"
+target_family="unix"
+target_feature="neon"
+target_has_atomic="128"
+target_has_atomic="16"
+target_has_atomic="32"
+target_has_atomic="64"
+target_has_atomic="8"
+target_has_atomic="ptr"
+target_has_atomic_primitive_alignment="128"
+target_has_atomic_primitive_alignment="16"
+target_has_atomic_primitive_alignment="32"
+target_has_atomic_primitive_alignment="64"
+target_has_atomic_primitive_alignment="8"
+target_has_atomic_primitive_alignment="ptr"
+target_os="linux"
+target_pointer_width="64"
+target_vendor="unknown"
+unix
+--- sysroot lib existence ---
+/usr/local/rustup/toolchains/stable-x86_64-unknown-linux-gnu
+/usr/local/rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/aarch64-unknown-linux-ohos
+/usr/local/rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/aarch64-unknown-linux-ohos/lib
+libaddr2line-a9d0f2323efb0f26.rlib
+libaddr2line-a9d0f2323efb0f26.rmeta
+libadler2-1165ae67b44cf764.rlib
+libadler2-1165ae67b44cf764.rmeta
+liballoc-bf5add365beb8d9e.rlib
+liballoc-bf5add365beb8d9e.rmeta
+libcfg_if-952a18675d19d0b7.rlib
+libcfg_if-952a18675d19d0b7.rmeta
+libcompiler_builtins-768f3dae6e4b247b.rlib
+libcompiler_builtins-768f3dae6e4b247b.rmeta

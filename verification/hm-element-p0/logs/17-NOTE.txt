@@ -1,0 +1,1 @@
+The wrappers in toolchain/ are parameterized with OHOS_SDK_NATIVE. logs/17 and logs/18 are the absolute-path wrappers actually used in this run.
