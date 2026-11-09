@@ -1,0 +1,7 @@
+{
+  "string": [
+    { "name": "module_desc", "value": "Matrix SDK diagnostic" },
+    { "name": "ability_desc", "value": "Open the SDK encrypted store" },
+    { "name": "ability_label", "value": "SDK diag" }
+  ]
+}

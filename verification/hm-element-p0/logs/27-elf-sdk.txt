@@ -1,0 +1,18 @@
+ffi so
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+bridge so
+  Class:                             ELF64
+  Type:                              DYN (Shared object file)
+  Machine:                           AArch64
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+00000000004f7470 T hm_sdk_open_encrypted_store
+00000000004f75c8 T hm_sdk_store_key_len
+diag so
+ 0x0000000000000001 (NEEDED)             Shared library: [libohos_min_bridge.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libace_napi.z.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc++_shared.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+ 0x000000000000000e (SONAME)             Library soname: [libhm_sdk_diag.so]

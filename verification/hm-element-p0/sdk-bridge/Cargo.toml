@@ -1,0 +1,20 @@
+[package]
+name = "ohos-min-bridge"
+version = "0.0.0"
+edition = "2024"
+publish = false
+license = "Apache-2.0"
+description = "Minimal OHOS diagnostic bridge over the locked matrix-sdk. Not a client."
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+matrix-sdk = { workspace = true, features = [
+    "e2e-encryption",
+    "automatic-room-key-forwarding",
+    "sqlite",
+    "bundled-sqlite",
+    "rustls-aws-lc-rs",
+] }
+tokio = { workspace = true, features = ["rt", "fs"] }

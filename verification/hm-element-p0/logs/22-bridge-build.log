@@ -1,0 +1,20 @@
+   Compiling time v0.3.55
+   Compiling ruma-common v0.20.2 (https://github.com/ruma/ruma?rev=0ed7fba34213f18a628a56f527c6cc795cd7eef5#0ed7fba3)
+   Compiling ruma-client-api v0.25.2 (https://github.com/ruma/ruma?rev=0ed7fba34213f18a628a56f527c6cc795cd7eef5#0ed7fba3)
+   Compiling ruma-events v0.35.2 (https://github.com/ruma/ruma?rev=0ed7fba34213f18a628a56f527c6cc795cd7eef5#0ed7fba3)
+   Compiling ruma v0.17.2 (https://github.com/ruma/ruma?rev=0ed7fba34213f18a628a56f527c6cc795cd7eef5#0ed7fba3)
+   Compiling blake3 v1.8.7
+   Compiling matrix-sdk-common v0.19.1 (/tmp/matrix-rust-sdk/crates/matrix-sdk-common)
+   Compiling tokio-rustls v0.26.4
+   Compiling byteorder v1.5.0
+   Compiling matrix-sdk-crypto v0.19.1 (/tmp/matrix-rust-sdk/crates/matrix-sdk-crypto)
+   Compiling hyper-rustls v0.27.9
+   Compiling matrix-sdk-store-encryption v0.19.1 (/tmp/matrix-rust-sdk/crates/matrix-sdk-store-encryption)
+   Compiling rusqlite v0.40.2
+   Compiling matrix-sdk-base v0.19.1 (/tmp/matrix-rust-sdk/crates/matrix-sdk-base)
+   Compiling reqwest v0.13.5
+   Compiling matrix-sdk v0.19.1 (/tmp/matrix-rust-sdk/crates/matrix-sdk)
+   Compiling matrix-sdk-sqlite v0.19.1 (/tmp/matrix-rust-sdk/crates/matrix-sdk-sqlite)
+   Compiling oauth2-reqwest v0.1.0-alpha.3
+   Compiling ohos-min-bridge v0.0.0 (/tmp/matrix-rust-sdk/bindings/ohos-min-bridge)
+    Finished `release` profile [optimized] target(s) in 9m 05s

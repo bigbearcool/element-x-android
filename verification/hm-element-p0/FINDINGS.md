@@ -4,7 +4,9 @@
 
 ## 结论
 
-鸿蒙侧目前只证明了：公开 OpenHarmony SDK 的 clang/sysroot 能把 Rust `std`、锁定版本的 bundled SQLite、vodozemac、以及一份 rustls/aws-lc 静态库链接成 AArch64 ELF；并能把一个最小 NAPI C++ 异步壳和 Rust 静态库链成 `.so`。这些产物没有在鸿蒙设备或 ArkTS 运行时里执行。
+2026-11-09 的组件探针没有被当成完整 SDK。2026-11-10 在同一 OpenHarmony 工具链上，用锁定提交 `3ff03638028fd9abf58203153722b94b4293a87a` 和原来的 `Cargo.lock`，`cargo build --locked --release --target aarch64-unknown-linux-ohos -p matrix-sdk-ffi` 已链接成功。产物是 ELF64 AArch64 的 `libmatrix_sdk_ffi.so`（146MB，SHA-256 `2bc22e2c720970d015b6f57ce0f66ce487b695ddfe4a7d446a543953c9e12a06`），动态依赖只有 `libc.so`。同一锁文件里的 `aws-lc-sys` 0.45.0 编进去了，没有改版本。
+
+随后的 `ohos-min-bridge` 链接了 `matrix-sdk` 0.19.1 的 client、E2EE、bundled SQLite 和 `rustls-aws-lc-rs`，导出 `hm_sdk_open_encrypted_store`。NAPI 壳 `libhm_sdk_diag.so` 动态依赖这个桥。这些 `.so` 没有在鸿蒙设备或 ArkTS 运行时里执行。未签名 HAP 工程只是源码，DevEco 没有编过，也没有签名。
 
 Element X 的 UniFFI Android 绑定不能直接当鸿蒙绑定。Rust SDK 的登录、同步、E2EE、设备验证、密钥备份、HTTP pusher API 能在源码里对上，但没有在鸿蒙上跑通过。数据库密钥的平台存储要另接 Asset Store；HUKS 里不可导出的密钥喂不进 SDK。Push Kit 的开通前提来自官方文档，不是对本账号的实测。
 
@@ -12,9 +14,10 @@ Element X 的 UniFFI Android 绑定不能直接当鸿蒙绑定。Rust SDK 的登
 
 | 项 | 状态 | 已实测 | 仅静态 / 未测 |
 | --- | --- | --- | --- |
-| 工具链 | PARTIAL | `aarch64-unknown-linux-ohos` 的 rust-std 已安装。无 OHOS linker 时链接失败（宿主 `ld` 拒绝 AArch64 重定位）。装上 OpenHarmony 7.0-Beta1 native clang 后，`libhello_ohos.so` 链接成功，`readelf` 为 ELF64 AArch64，`NEEDED libc.so`，导出 `hm_poc_ping`。 | 未在设备或模拟器加载。没有 DevEco，没有 `qemu-aarch64`。用的是 OpenHarmony 公开 SDK，不是 HarmonyOS NEXT 商用 SDK。 |
-| FFI | PARTIAL | `napi/native_api.h` 与 `libace_napi.z.so` 存在。`libhm_poc.so` 为 ELF64 AArch64，`NEEDED libace_napi.z.so`、`libc++_shared.so`、`libc.so`，导出 `hm_poc_add` 与 `hm_poc_register_napi`，未定义符号包含 `napi_create_promise`、`napi_create_async_work`、`napi_module_register`。 | ArkTS 草图没有运行。`libace_napi.z.so` 多个导出符号地址相同，是链接桩，不是可离线执行的 NAPI 实现。UniFFI 0.32.1 没有 ArkTS 后端。 |
-| E2EE 与安全存储 | PARTIAL | 锁定提交里的 API 与存储路径已读到源码。主机 x86_64 上 `matrix-sdk-store-encryption` 0.19.1 单测 10 通过、0 失败。同一套 vodozemac 0.11.2、bundled SQLite、XChaCha20-Poly1305 探针在主机返回 `sqlite=1 aead_len=6 vodozemac=1`。这些库也编进了 AArch64 staticlib。 | 主机结果不是设备 E2EE，也不是鸿蒙进程。没有跑 `matrix-sdk-crypto` 全套，没有登录或同步。没有调用 Asset Store / HUKS。SQLCipher 交叉编译被缺少 OpenSSL 头阻断。 |
+| 工具链 | PARTIAL | 上轮负对照仍在：无 OHOS linker 时宿主 `ld` 拒绝 AArch64。本轮完整 `matrix-sdk-ffi` 与桥都用 OpenHarmony clang 15 链成 ELF64 AArch64。 | 未在 HarmonyOS NEXT 设备或模拟器加载。没有 DevEco，没有 HDC 连接。公开 SDK 不是商用 HarmonyOS NEXT SDK。 |
+| 完整 SDK 构建 | PASS（交叉链接） | `matrix-sdk-ffi` 0.19.1，`--locked`，默认 features 再加 `sentry,experimental-x509-identity-verification`。27 分 08 秒，退出码 0。符号含 `client_login`、`client_sync_service`、`client_encryption`、`client_set_pusher`、`clientbuilder_sqlite_store`、`encryption_enable_recovery`。`sqlite3_open` 在库内，没有 `sqlite3_key`。 | 未在设备上 `dlopen`。release 配置为 opt-level 2、LTO 关闭、codegen-units 16、jobs 1，用来适应这台云主机内存，不是上游默认的 opt-level 3。 |
+| FFI / NAPI | PARTIAL | `libhm_sdk_diag.so` 为 ELF64 AArch64，`NEEDED libohos_min_bridge.so`、`libace_napi.z.so`、`libc++_shared.so`、`libc.so`，导出 `hm_sdk_diag_register`，引用 `hm_sdk_open_encrypted_store`。 | ArkTS 未执行。`libace_napi.z.so` 仍是链接桩。UniFFI 不生成 ArkTS。未签名 HAP 未用 DevEco 编译。 |
+| E2EE 与安全存储 | PARTIAL | 桥调用锁定 SDK 的 `Client::builder().sqlite_store_with_config_and_cache_path` 和 `SqliteStoreConfig::key`，并打开 `SqliteStateStore` 与 `SqliteCryptoStore`。主机 x86_64 单测 `host_encrypted_store_rejects_wrong_key` 通过：原密钥打开，改一个比特的密钥被拒绝，返回码 0。加密仍是 SDK 的 StoreCipher。 | 这是 Linux 主机，不是鸿蒙进程，也不是设备上的 Olm 会话。没有登录、同步或 Asset Store。SQLCipher 仍是 BLOCKED。 |
 | Push | NOT TESTED（送达）/ 文档为静态核对 | 无。没有 AGC、签名、Push Token、gateway 或真机。 | 官方文档描述了未上架调试路径和测试消息额度。用户所说 1000 条/天没有对照他的 AGC 项目核实。锁屏、杀进程送达未测。 |
 
 ## 1. 仓库与锁定版本
@@ -29,7 +32,7 @@ Element X 的 UniFFI Android 绑定不能直接当鸿蒙绑定。Rust SDK 的登
 | Olm | `vodozemac` 0.11.2。 | Apache-2.0。 |
 | 会话库 SQLCipher | `net.zetetic:sqlcipher-android:4.19.1`，只服务 Element 自己的 SQLDelight 会话库。 | POM 指向 Zetetic 许可页，没有给出 SPDX 标识。这是 Android AAR。 |
 | Rust 存储 | `rusqlite` 0.40.2，`bundled` 特征，不是 SQLCipher。字段加密在 `matrix-sdk-store-encryption`：XChaCha20-Poly1305，口令路径 PBKDF2-HMAC-SHA256（200_000 轮）或 HKDF-SHA256。 | 随 SDK，Apache-2.0。 |
-| TLS | FFI 默认特征 `rustls-aws-lc-rs`。工作区 `rustls` 0.23.46。锁文件 `aws-lc-rs` 1.18.1、`aws-lc-sys` 0.45.0。 | 探针实际解到的是 `aws-lc-rs` 1.19.0 / `aws-lc-sys` 0.47.0，不等于锁文件。 |
+| TLS | FFI 默认特征 `rustls-aws-lc-rs`。工作区 `rustls` 0.23.46。锁文件 `aws-lc-rs` 1.18.1、`aws-lc-sys` 0.45.0。 | 2026-11-09 探针曾解到 1.19.0 / 0.47.0。2026-11-10 的完整构建改回锁文件里的 1.18.1 / 0.45.0，并编进 `libmatrix_sdk_ffi.so`。 |
 
 复用边界：
 
@@ -141,5 +144,36 @@ SQLCipher 探针一次失败即停止。`rusqlite` 的 `bundled-sqlcipher` 编�
 | `logs/13-host-only-probe.log` | 主机探针，不是鸿蒙 |
 | `logs/15-host-sdk-store-encryption-test.log` | SDK 存储加密单测，主机，10 通过 |
 | `logs/16-elf-evidence.txt` | 两个 `.so` 的 ELF 头、NEEDED 和符号 |
+| `logs/20-full-sdk-build.log` | 锁定 `matrix-sdk-ffi` 的 OHOS 构建，退出码 0 |
+| `logs/26-host-sdk-store-test.log` | 主机上错误密钥被拒绝，1 通过。不是鸿蒙 |
+| `logs/27-elf-sdk.txt` | FFI、桥、NAPI 的 ELF 依赖 |
+| `logs/28-ffi-symbols.txt` | login/sync/encryption/sqlite/pusher 符号 |
+| `logs/29-bridge-sha256.txt` | 三个产物的 SHA-256 |
+| `hap-diag/` | 未签名诊断工程，DevEco 未编译 |
 | `evidence/libhello_ohos.so` | AArch64 hello |
 | `evidence/libhm_poc.so` | AArch64 NAPI 壳 |
+
+## 7. 2026-11-10 完整 SDK 构建
+
+精确命令在 `logs/20-full-sdk-preamble.txt` 和 `poc/scripts/build-full-sdk.sh`。工作区没有改 SDK 业务代码。为了让新桥包能被 `--locked` 接受，`Cargo.lock` 只增加了本地包 `ohos-min-bridge` 0.0.0 这 8 行，没有改任何第三方版本或 checksum。`ruma` 仍是锁文件里的 git rev `0ed7fba34213f18a628a56f527c6cc795cd7eef5`。
+
+Android 发布脚本 `xtask` 的 FullSDK 特征是在默认特征之上再加 `sentry,experimental-x509-identity-verification`。这次构建用的就是这组。默认特征已经包含 `bundled-sqlite`、`rustls-aws-lc-rs`，并且 `matrix-sdk` 依赖打开了 `e2e-encryption`。没有为 OHOS 改 `cfg`，也没有换 TLS 后端。
+
+| 产物 | 机器 | 动态依赖 | 说明 |
+| --- | --- | --- | --- |
+| `libmatrix_sdk_ffi.so` 146MB | AArch64 | `libc.so` | 完整 FFI。动态符号包括 `uniffi_matrix_sdk_ffi_fn_method_client_login`、`client_sync_service`、`client_encryption`、`client_set_pusher`、`clientbuilder_sqlite_store`、`encryption_enable_recovery`。库内有 `sqlite3_open`，没有 `sqlite3_key`。SHA-256 `2bc22e2c720970d015b6f57ce0f66ce487b695ddfe4a7d446a543953c9e12a06`。 |
+| `libohos_min_bridge.so` 21MB | AArch64 | `libc.so` | 导出 `hm_sdk_open_encrypted_store`、`hm_sdk_store_key_len`。SHA-256 以 `logs/29-bridge-sha256.txt` 为准。 |
+| `libhm_sdk_diag.so` 37KB | AArch64 | `libohos_min_bridge.so`、`libace_napi.z.so`、`libc++_shared.so`、`libc.so` | NAPI 模块名 `hm_sdk_diag`，异步调用上面的打开函数。 |
+
+桥的打开函数要求 32 字节原始密钥，调用 `SqliteStoreConfig::key`，再打开 state store 和 crypto store。它另外用翻了一个比特的密钥再打开同目录，只有这次失败才返回 0。`Client::builder().homeserver_url(...).sqlite_store_with_config_and_cache_path(...)` 只把配置留在 builder 里，没有调用 `build()`，所以不会访问网络或账号。SQLCipher 仍然因缺少 OpenSSL 头而 BLOCKED；这里没有改用无密钥的普通库冒充加密。
+
+`hap-diag/` 是未签名的诊断工程，只有一页按钮，用来在沙箱目录上调用 `openEncryptedStore`。它没有聊天界面。DevEco、签名、HDC 和真机都没有跑过。HarmonyOS NEXT 调试要用 HDC。安卓 ADB 不能当作这次原生库已经在鸿蒙上跑通。
+
+云端没有连接用户的手机，也没有登录 AGC。真机实验要由主代理通过用户本机的 Air 做，条件是：
+
+1. HarmonyOS NEXT 手机，已打开开发者模式，`hdc list targets` 能看到设备。
+2. 安装 DevEco，以及与该手机匹配的 HarmonyOS NEXT SDK。公开 OpenHarmony 7.0-Beta1 native clang 只能交叉链接，不能代替 DevEco 编 HAP。
+3. AGC 调试证书、已注册的这台设备、调试 Profile。没有这些就不能装签名包。本次没有登录 AGC。
+4. 把 `libohos_min_bridge.so`、`libhm_sdk_diag.so`，以及 OpenHarmony sysroot 里的 `libc++_shared.so` 放进 `entry/libs/arm64-v8a/`。
+5. 用 DevEco 编未上架的调试 HAP，`hdc install`，点页面按钮。返回 0 表示原始密钥能打开 SDK 的 state/crypto 库，且错误密钥被拒绝。这仍不是登录或收消息。
+6. 诊断页里的 32 字节是固定测试向量，不是 Asset Store 密钥。接到 Asset Store 之前，不要把它当成正式设备密钥。

@@ -1,0 +1,3 @@
+2bc22e2c720970d015b6f57ce0f66ce487b695ddfe4a7d446a543953c9e12a06  /tmp/hm-element-p0/target-sdk-ohos/aarch64-unknown-linux-ohos/release/libmatrix_sdk_ffi.so
+c3cec534b4b742ec26f133d6a46d29ccb4e29fafd0cdedc6e90ca5e2541b19dc  /tmp/hm-element-p0/target-sdk-ohos/aarch64-unknown-linux-ohos/release/libohos_min_bridge.so
+cf2afe695dae8250f05bbecdae59d6a296bc2d61d1f1f1d98b6d6ef816831eb0  /tmp/hm-element-p0/napi/libhm_sdk_diag.so

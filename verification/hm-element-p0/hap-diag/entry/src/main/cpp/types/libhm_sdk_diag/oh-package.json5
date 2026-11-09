@@ -1,0 +1,6 @@
+{
+  "name": "libhm_sdk_diag.so",
+  "types": "./Index.d.ts",
+  "version": "0.0.1",
+  "description": "NAPI types for the SDK diagnostic bridge."
+}

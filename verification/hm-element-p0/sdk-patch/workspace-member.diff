@@ -1,0 +1,31 @@
+diff --git a/Cargo.lock b/Cargo.lock
+index 6f1c89197..b6c924980 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -4457,6 +4457,14 @@ dependencies = [
+  "memchr",
+ ]
+ 
++[[package]]
++name = "ohos-min-bridge"
++version = "0.0.0"
++dependencies = [
++ "matrix-sdk",
++ "tokio",
++]
++
+ [[package]]
+ name = "oid-registry"
+ version = "0.8.1"
+diff --git a/Cargo.toml b/Cargo.toml
+index a99125f84..9f483777a 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -3,6 +3,7 @@ members = [
+     "benchmarks",
+     "bindings/matrix-sdk-crypto-ffi",
+     "bindings/matrix-sdk-ffi",
++    "bindings/ohos-min-bridge",
+     "crates/*",
+     "examples/*",
+     "labs/*",

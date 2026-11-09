@@ -1,0 +1,9 @@
+{
+  "name": "hm-sdk-diag",
+  "version": "0.0.1",
+  "description": "Unsigned diagnostic HAP for the locked Matrix Rust SDK bridge.",
+  "main": "",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

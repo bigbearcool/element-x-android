@@ -1,0 +1,15 @@
+DATE 2026-11-09T19:56:41Z
+HEAD 3ff03638028fd9abf58203153722b94b4293a87a
+rustc 1.99.1 (58cf8f9c3 2026-10-13)
+binary: rustc
+commit-hash: 58cf8f9c35b355199727627d07ae34a4e2846d67
+commit-date: 2026-10-13
+host: x86_64-unknown-linux-gnu
+release: 1.99.1
+LLVM version: 23.1.1
+PACKAGE matrix-sdk-ffi
+FEATURES defaults plus sentry,experimental-x509-identity-verification
+LOCKED yes
+TARGET aarch64-unknown-linux-ohos
+PROFILE release opt-level=2 lto=false codegen-units=16 jobs=1
+LINKER /tmp/hm-element-p0/toolchain/aarch64-unknown-linux-ohos-clang.sh
