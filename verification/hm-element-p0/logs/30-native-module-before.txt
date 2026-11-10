@@ -1,0 +1,15 @@
+CLOUD_CHECK_ONLY device ArkTS import is not executed here
+FAIL missing /workspace/verification/hm-element-p0/hap-diag/entry/oh-package.json5
+PASS types package name
+PASS constructor hm_sdk_diag_register
+PASS nm_modname string hm_sdk_diag
+NEEDED libohos_min_bridge.so
+libace_napi.z.so
+libc++_shared.so
+libc.so
+PASS NEEDED libohos_min_bridge.so
+PASS NEEDED libace_napi.z.so
+PASS NEEDED libc.so
+FAIL diag so still needs libc++_shared.so and this package does not ship one
+PASS bridge does not need libmatrix_sdk_ffi.so
+CLOUD_CHECK_FAIL

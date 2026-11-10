@@ -1,5 +1,7 @@
 # hm-element P0 技术实证（2026-11-09）
 
+2026-11-10 真机：`import native from 'libhm_sdk_diag.so'` 为 undefined，`Index.ets:42` 在调用 `openEncryptedStore` 前退出。没有返回码。修正见 `AIR-UPDATE.md`。云端契约检查不能代替这台手机上的下一次点击。
+
 这是隔离 Linux 云环境里的验证记录，不是功能开发，也不是可落地结论。P0 没有全通过。没有 HarmonyOS NEXT 真机、模拟器、DevEco Studio，也没有登录 AppGallery Connect。用户本机的 `/Users/xiangyu/开发项目/hm-element/element-x-android` 没有被改动。没有向 element-hq 推送或开 PR。
 
 ## 结论

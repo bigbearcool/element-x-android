@@ -1,0 +1,10 @@
+{
+  "name": "entry",
+  "version": "0.0.1",
+  "description": "Diagnostic entry. Independent bundle com.hm.element.sdkdiag.",
+  "main": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "libhm_sdk_diag.so": "file:./src/main/cpp/types/libhm_sdk_diag"
+  }
+}

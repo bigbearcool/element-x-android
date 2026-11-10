@@ -1,0 +1,12 @@
+readelf=readelf
+nm=nm
+diag=/workspace/verification/hm-element-p0/hap-diag/entry/libs/arm64-v8a/libhm_sdk_diag.so
+ 0x0000000000000001 (NEEDED)             Shared library: [libohos_min_bridge.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libace_napi.z.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+ 0x000000000000000e (SONAME)             Library soname: [libhm_sdk_diag.so]
+LIBC calloc
+LIBC free
+LIBC malloc
+LIBC memcpy
+No C++ symbols are imported. Do not add libc++_shared.so.

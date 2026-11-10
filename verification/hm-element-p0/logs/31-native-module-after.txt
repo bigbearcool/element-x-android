@@ -1,0 +1,14 @@
+CLOUD_CHECK_ONLY device ArkTS import is not executed here
+PASS entry dependency
+PASS types package name
+PASS constructor hm_sdk_diag_register
+PASS nm_modname string hm_sdk_diag
+NEEDED libohos_min_bridge.so
+libace_napi.z.so
+libc.so
+PASS NEEDED libohos_min_bridge.so
+PASS NEEDED libace_napi.z.so
+PASS NEEDED libc.so
+PASS diag so does not need libc++_shared.so
+PASS bridge does not need libmatrix_sdk_ffi.so
+CLOUD_CHECK_PASS not a device result
